@@ -1,0 +1,286 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8faff
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.active{
+  display: flex;
+}
+
+/* Add Item Overlay */
+.addItemOverlay{
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  position: absolute;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #dedfe2;
+  opacity: 0.75;
+  -webkit-filter: blur(20px); /* Safari 6.0 - 9.0 */
+    filter: blur(20px);
+  z-index: 3;
+}
+.overlayContent{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.closeAddArea{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 10;
+}
+.closeAddArea i{
+  font-size: 3em;
+  margin: 0 1em;
+  color: #1f2124;
+}
+.closeAddArea i:hover{
+  color: #ff7761;
+}
+.addItemForm{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10;
+}
+.addItemForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  height: 50%;
+
+}
+.addItemForm form label{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.addItemForm form input{
+  appearance:none;
+	border: none;
+  background-color: #f8faff;
+	border-bottom: 1.5px solid #0080ff;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 15px;
+  font-size: 1em;
+}
+.addItemForm form .formField{
+  display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-bottom: 12.5px;
+}
+.formRow{
+  margin: 1em 0;
+  width: 50%;
+  height: 20%;
+}
+.addItemForm button{
+  width: 40%;
+  font-size: 1.5em;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 20px;
+  margin: 0em 0.5em;
+  border-radius: 2em;
+  border: 0px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #0080ff, #45d9fd);
+  color: #f8faff;
+}
+
+/* Nav bar */
+.menu{
+  width: 100vw;
+  height: 10vh;
+  background-color: #f8faff;
+  box-shadow: 0px 2px 10px #dedfe2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.logo{
+  width: 10vw;
+  height: 10vh;
+  background-color: #f8faff;
+}
+#headerImg{
+  width: auto;
+  height: 100%;
+}
+.navItems{
+  width: 90vw;
+  height: 10vh;
+  background-color: #f8faff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+.navItems a {
+  margin: 0 1em;
+  text-decoration: none;
+}
+.navItems a h1:hover{
+  color: #0080ff;
+}
+.active{
+  color: #0080ff;
+}
+.navItems a h1{
+  margin: 0;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #1f2124;
+}
+
+/* Data Area */
+.dataArea{
+  width: 100vw;
+  height: 90vh;
+  background-color: #eff1f4;
+  z-index: 0;
+}
+.infoAddArea{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#welcomeTxt{
+  width: 75vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+#welcomeTxt h1{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #1f2124;
+  margin: 0 1em;
+}
+.addItem{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.addItem a{
+  text-decoration: none;
+}
+.addItem h1{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #1f2124;
+  border-bottom: 1px solid #FFBC42;
+}
+.addItem i{
+  color: #FFBC42;
+}
+
+.remainingArea{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.budgetCard{
+  width: 20%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #f8faff;
+}
+.cardSetup{
+  display: flex;
+  flex-direction: row;
+}
+.iconArea{
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.iconArea i{
+  color: #f8faff;
+  font-size: 3em;
+}
+.valueArea{
+  width: 50%;
+  height: 100%;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}.valueArea h2{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.5em;
+  color: #1f2124;
+}
+#monthlyRemainCard .iconArea{
+  background-color: #87d37c;
+}
+#foodRemainCard .iconArea{
+  background-color: #0080ff;
+}
+#rentRemainCard .iconArea{
+  background-color: #F7CA18;
+}
+#travelRemainCard .iconArea{
+  background-color: #ff7761;
+}
+
+.graphArea{
+  width: 100vw;
+  height: 60%;
+  margin-top: 2em;
+
+}

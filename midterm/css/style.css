@@ -1,0 +1,98 @@
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+h2{
+  margin: 0;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Nav Area */
+.navArea{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navBar{
+  margin: 0;
+  padding: 0;
+}
+.title{
+  padding-bottom: 2em;
+}
+.navBar{
+  padding-bottom: 2em;
+}
+.navBar li{
+  display: inline-block;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 2em;
+}
+.iconNav img{
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+/* Content Area */
+.content{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.landingPhoto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgArea{
+  width: 60vw;
+  height: 100%;
+  margin-left: 5em;
+}
+#destImg{
+  width: 90%;
+}
+.textArea{
+  width: 40vw;
+  height: 100%;
+  margin-right: 2em;
+}
+.question {
+	margin-bottom: 5px;
+	padding: .5em 0 0 1.1em;
+	cursor: pointer;
+  background: url(../images/downarrow.png) no-repeat 0 .6em;
+}
+.question.close {
+	background-image: url(../images/uparrow.png);
+}
+.infoArea{
+  width: 50vw;
+  height: 100%;
+  margin-left: 2em;
+}
+.safetyImg{
+  width: 50vw;
+  height: 100%;
+}
+.answer{
+  margin-left: 2em;
+}
+
+#imgSafe{
+  width: 90%;
+}

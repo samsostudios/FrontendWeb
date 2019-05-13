@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Swiss Design</title>
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/plugins/CSSPlugin.min.js"></script>
+
+  </head>
+  <body>
+    <div class="content" id="wrapper">
+      <div class="presentation">
+        <div class="slide active animateShow" id="slide1">
+          <div class="sText">
+            <div class="layout1"></div>
+            <div class="layout1"></div>
+            <div id="text1">
+              <h1>"International Style"</h1>
+            </div>
+            <div class="zeroOpac" id="text2">
+              <p>originated in Switzerland between 1940 and 1950</p>
+            </div>
+            <div id="text3">
+              <h1>foundation</h1>
+            </div>
+            <div class="zeroOpac" id="text4">
+              <p>of graphic design in the modern era.</p>
+            </div>
+          </div>
+
+          <div class="sContent">
+            <div class="title">
+              <h1 class="zeroOpac" id="jNameTitle">International Style</h1>
+            </div>
+
+            <div class="graphic">
+              <svg xmlns="http://www.w3.org/2000/svg" id="sShape" viewBox="0 0 1000 1000" width="100%" height="100%" >
+                <path id="sYellow" fill="#feea00" d="M743.6 291c-19.9-26.2-47.4-49-82.2-68.3-34.9-19.3-72.9-29-114-29-36.2 0-69.2 7.5-99.1 22.4-29.9 15-44.9 39.9-44.9 74.8s16.5 59.6 49.6 73.9 81.4 29 145 43.9c33.7 7.5 67.6 17.5 102 29.9 34.3 12.5 65.5 29 93.5 49.5 28.1 20.6 50.8 46.1 68.3 76.7S888 632.4 888 676c0 54.8-10.3 101.3-30.9 139.3-20.6 38-48.1 68.9-82.5 92.5-34.4 23.7-74.3 40.8-119.9 51.4-45.6 10.6-92.7 15.9-141.3 15.9-69.9 0-137.9-12.8-204-38.5s-121-62.3-164.7-109.9l147.8-138.6c24.9 32.4 57.4 59.3 97.3 80.5 39.9 21.2 84.2 31.8 132.9 31.8 16.2 0 32.7-1.9 49.6-5.6 16.8-3.7 32.4-9.7 46.8-17.8s25.9-19 34.6-32.7c8.7-13.7 13.1-30.5 13.1-50.5 0-37.4-17.2-64.2-51.5-80.4-34.3-16.2-85.8-32.4-154.4-48.6-33.7-7.5-66.4-17.1-98.3-29-31.8-11.8-60.2-27.4-85.1-46.7-24.9-19.3-44.9-43.3-59.9-71.9s-22.4-64.2-22.4-106.6c0-49.8 10.3-92.8 30.9-129s47.7-65.7 81.4-88.8c33.7-23.1 71.7-40.2 114.1-51.4 42.4-11.2 86.1-16.8 131-16.8 64.9 0 128.1 11.3 189.9 33.8s110.7 56.9 146.9 103.2L743.6 291z"/>
+                <path id="sBlue" fill="#37bbe4" d="M854.2 291c-19.9-26.2-47.4-49-82.2-68.3-34.9-19.3-72.9-29-114-29-36.2 0-69.2 7.5-99.1 22.4-29.9 15-44.9 39.9-44.9 74.8s16.5 59.6 49.6 73.9 81.4 29 145 43.9c33.7 7.5 67.6 17.5 102 29.9 34.3 12.5 65.5 29 93.5 49.5 28.1 20.6 50.8 46.1 68.3 76.7 17.5 30.5 26.2 67.6 26.2 111.2 0 54.8-10.3 101.3-30.9 139.3-20.6 38-48.1 68.9-82.5 92.5-34.4 23.7-74.3 40.8-119.9 51.4-45.6 10.6-92.7 15.9-141.3 15.9-69.9 0-137.9-12.8-204-38.5s-121-62.3-164.7-109.9l147.8-138.6c24.9 32.4 57.4 59.3 97.3 80.5 39.9 21.2 84.2 31.8 132.9 31.8 16.2 0 32.7-1.9 49.6-5.6 16.8-3.7 32.4-9.7 46.8-17.8s25.9-19 34.6-32.7c8.7-13.7 13.1-30.5 13.1-50.5 0-37.4-17.2-64.2-51.5-80.4-34.3-16.2-85.8-32.4-154.4-48.6-33.7-7.5-66.4-17.1-98.3-29-31.8-11.8-60.2-27.4-85.1-46.7-24.9-19.3-44.9-43.3-59.9-71.9-15-28.7-22.4-64.2-22.4-106.6 0-49.8 10.3-92.8 30.9-129s47.7-65.7 81.4-88.8c33.7-23.1 71.7-40.2 114.1-51.4 42.4-11.2 86.1-16.8 131-16.8 64.9 0 128.1 11.3 189.9 33.8s110.7 56.9 146.9 103.2L854.2 291z"/>
+                <path id="sPink" fill="#de3d83" d="M599 291c-19.9-26.2-47.4-49-82.2-68.3-34.9-19.3-72.9-29-114-29-36.2 0-69.2 7.5-99.1 22.4-29.9 15-44.9 39.9-44.9 74.8s16.5 59.6 49.6 73.9 81.4 29 145 43.9c33.7 7.5 67.6 17.5 102 29.9 34.3 12.5 65.5 29 93.5 49.5 28.1 20.6 50.8 46.1 68.3 76.7 17.5 30.5 26.2 67.6 26.2 111.2 0 54.8-10.3 101.3-30.9 139.3-20.6 38-48.1 68.9-82.5 92.5-34.4 23.7-74.3 40.8-119.9 51.4-45.6 10.6-92.7 15.9-141.3 15.9-69.9 0-137.9-12.8-204-38.5S43.7 874.4 0 826.8l147.8-138.6c24.9 32.4 57.4 59.3 97.3 80.5 39.9 21.2 84.2 31.8 132.9 31.8 16.2 0 32.7-1.9 49.6-5.6 16.8-3.7 32.4-9.7 46.8-17.8s25.9-19 34.6-32.7c8.7-13.7 13.1-30.5 13.1-50.5 0-37.4-17.2-64.2-51.5-80.4-34.3-16.2-85.8-32.4-154.4-48.6-33.7-7.5-66.4-17.1-98.3-29-31.8-11.8-60.2-27.4-85.1-46.7C108 470 88 446 73.1 417.4s-22.4-64.2-22.4-106.6c0-49.8 10.3-92.8 30.9-129S129.3 116.1 163 93c33.6-23 71.6-40.1 114-51.3 42.4-11.2 86.1-16.8 131-16.8 64.9 0 128.1 11.3 189.9 33.8s110.7 56.9 146.9 103.2L599 291z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide animateShow" id="slide2">
+          <div class="pContent">
+            <svg xmlns="http://www.w3.org/2000/svg" id="polygonShapes" viewBox="0 0 1000 1000" width="100%" height="100%">
+              <path class="polyShape" id="shape1" fill="#d5a729" d="M465.3 765.6V0H0v304.2z"/>
+              <path class="polyShape" id="shape2" fill="#cf8f2a" d="M482.5 765.6V1.3l382.9 382.9z"/>
+              <path class="polyShape" id="shape3" fill="#c77129" d="M490.3 780.3l386.4-.9V397.6z"/>
+              <path class="polyShape" id="shape4" fill="#c25c28" d="M492.8 798l192.1 192.1 190.8-190.8z"/>
+              <path class="polyShape" id="shape5" fill="#b73326" d="M481.2 809.5V1000H674z"/>
+              <path class="polyShape" id="shape6" fill="#a61f23" d="M462 809.5V1000l-95.2-95.2z"/>
+              <path class="polyShape" id="shape7" fill="#a51e23" d="M449.2 798l-93.6 93.6V798z"/>
+              <path class="polyShape" id="shape8" fill="#901a1f" d="M451.6 780.3h-93.1l44.9-44.9z"/>
+            </svg>
+          </div>
+
+          <div class="sText">
+            <div></div>
+            <div></div>
+            <div class="text1">
+              <h1>josef müller-brockmann & armin hofmann</h1>
+            </div>
+            <div class="text2">
+              <p style="color: #1e1e1e">originators of the swiss design style</p>
+            </div>
+            <div class="text3">
+              <h1>deign fundamentals</h1>
+            </div>
+            <div class="text4">
+              <p style="color: #1e1e1e">  based on simplicity, legibility and objectivity. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide animateShow" id="slide3">
+          <<div class="sText">
+            <div></div>
+            <div></div>
+            <div class="text1">
+              <p>swiss born graphic designer</p>
+            </div>
+            <div class="text2">
+              <p>co-founder of neue grafik magazine</p>
+            </div>
+            <div class="text3">
+              <p>grid based design theory</p>
+            </div>
+            <div class="text4">
+              <p>design consultant for IBM</p>
+            </div>
+
+          </div>
+          <div class="sContent">
+            <div class="title">
+              <h1 id="jNameTitle">josef müller-brockmann</h1>
+            </div>
+
+            <div class="graphic">
+              <svg xmlns="http://www.w3.org/2000/svg" id="circleShape" viewBox="0 0 1000 1000" width="100%" height="100%">
+                <style>
+                  .st0{fill:none;stroke:#1e1e1e;stroke-width:39;stroke-linecap:round;stroke-miterlimit:10}
+                </style>
+                <path d="M325.3 72.6c53.9-22 112.9-34.2 174.7-34.2 254.5 0 460.9 206.3 460.9 460.9S754.5 960.1 500 960.1 39.1 753.8 39.1 499.2" class="st0"/>
+                <path d="M654.1 108.4C809.8 169.8 920 321.7 920 499.2c0 232-188 420-420 420-82.9 0-160.2-24-225.2-65.4" class="st0"/>
+                <path d="M352.5 150.1c45.3-19.2 95.2-29.8 147.5-29.8 209.3 0 378.9 169.7 378.9 378.9s-169.6 379-378.9 379" class="st0"/>
+                <path d="M410.2 173.7c28.6-7.9 58.7-12.1 89.8-12.1 186.5 0 337.6 151.2 337.6 337.6 0 52.3-11.9 101.9-33.2 146.1" class="st0"/>
+                <path d="M500 203.6c61.2 0 118.1 18.6 165.3 50.5 78.7 53.1 130.4 143.1 130.4 245.2 0 91.9-41.9 173.9-107.6 228.2" class="st0"/>
+                <path d="M742.8 423.7c7.4 23.9 11.4 49.3 11.4 75.6 0 110.4-70.4 204.4-168.8 239.5M712.6 499.2c0 117.4-95.2 212.6-212.6 212.6" class="st0"/>
+                <path d="M712.6 499.2c0 38.1-10 73.8-27.5 104.7-36.6 64.5-105.7 107.9-185.1 107.9-17.8 0-35-2.2-51.5-6.3" class="st0"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide animateShow" id="slide4">
+          <div class="pContent">
+            <div class="graphic">
+              <svg xmlns="http://www.w3.org/2000/svg" id="squareShape" viewBox="0 0 1000 1000" width="100%" height="100%">
+                <style>
+                  .st1{fill:#1e1e1e}
+                </style>
+                <path d="M360.5 360.5h279v279h-279zM360.5 669.5h584.6v279H360.5zM666.2 51.6h279v587.9h-279zM54.8 51.6h584.6v279H54.8zM54.8 360.5h279v587.9h-279z" class="st1"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="sText">
+            <div></div>
+            <div></div>
+            <div class="text1">
+            </div>
+            <div class="text2">
+              <div class="title">
+                <h1>Armin Hofmann</h1>
+              </div>
+            </div>
+            <div class="text3">
+              <p>Unorthadox teaching style</p>
+            </div>
+            <div class="text4">
+              <p>Head of the Basel School of Arts and Crafts</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="slide animateShow" id="slide5">
+          <div class="nContent">
+            <div class="graphic">
+              <svg xmlns="http://www.w3.org/2000/svg" id="lines" viewBox="0 0 1000 3000" width="100%" height="100%">
+                <style>
+                  .rt0{fill:#d33127}.rt1{fill:#cd7128}.rt2{fill:#d9d224}.rt3{fill:#098341}.rt4{fill:#007089}
+                </style>
+                <g  class="zeroOpac" id="red">
+                  <path d="M0 0h114.9v1907.6H0zM0 2052.2h114.9v274.5H0zM0 2471.9h114.9v142.8H0zM0 2856h114.9v144H0z" class="rt0"/>
+                </g>
+                <g class="zeroOpac" id="orange">
+                  <path d="M114.9 2712.4h114.7V2856H114.9zM114.9 2326.7h114.7v143.6H114.9zM114.9 0h114.7v2195.7H114.9z" class="rt1"/>
+                </g>
+                <g class="zeroOpac" id="yellow">
+                  <path d="M221.6 2856.2h114.7v143.6H221.6zM229.7 2189.4h114.7V2333H229.7zM229.7 0h114.7v2052.2H229.7z" class="rt2"/>
+                </g>
+                <g class="zeroOpac" id="green">
+                  <path d="M336.3 2856H451v143.6H336.3zM336.3 2471.5H451v143.6H336.3zM344.4 0h106.3v2052.2H344.4z" class="rt3"/>
+                </g>
+                <g class="zeroOpac" id="blue">
+                  <path d="M451 2856.4h114.7V3000H451zM451 2615.1h114.7v143.6H451zM450.6 2045.8h114.7v143.6H450.6zM451 0h114.7v1907.6H451z" class="rt4"/>
+                </g>
+              </svg>
+            </div>
+            <div class="title">
+              <h2 id="jNameTitle">Swiss Design</h2>
+            </div>
+          </div>
+
+          <div class="sText">
+            <div class="layout1"></div>
+            <div class="layout1"></div>
+            <div id="text1">
+              <div class="title">
+                <h1 style="color: #fff">Armin Hofmann</h1>
+              </div>
+            </div>
+            <div id="text2">
+            </div>
+            <div id="text3">
+              <p style="color: #fff">Believed Swiss style was centered around communication</p>
+            </div>
+            <div id="text4">
+              <p style="color: #fff">practiced new techniques for creating typography</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

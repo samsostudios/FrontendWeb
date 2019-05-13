@@ -1,0 +1,153 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+label{
+  font-size: 1.5em;
+}
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #0080ff, #45d9fd);
+}
+.content{
+  display: flex;
+  flex-direction: row;
+}
+.logoArea{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 75%;
+  height: auto;
+}
+.logo img{
+  width: 100%;
+}
+.welcomeTxt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeTxt h1{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+  color: #f8faff;
+  margin: 0;
+}
+.welcomeTxt h2{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2em;
+  color: #f8faff;
+  margin: 0;
+}
+
+#formArea{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#formArea form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: 75%;
+  border: double 5px transparent;
+  border-radius: 1em;
+  background-image: linear-gradient(#f8faff, #f8faff), radial-gradient(circle at top left, #45d9fd,#0080ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+}
+#emailForm{
+  width: 90%;
+  height: 20%;
+}
+#passForm{
+  width: 90%;
+  height: 20%;
+}
+#formArea form label{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+#formArea form input{
+  appearance:none;
+	border: none;
+  background-color: #f8faff;
+	border-bottom: 1.5px solid #ccc;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 15px;
+  font-size: 1em;
+}
+#formArea form .formField{
+  display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-bottom: 12.5px;
+}
+#formArea button{
+  width: 75%;
+  font-size: 1.5em;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 20px;
+  margin: 0.2em;
+  border-radius: 2em;
+  border: 0px;
+  cursor: pointer;
+}
+#formArea #logInBtn{
+  background: linear-gradient(45deg, #0080ff, #45d9fd);
+  color: #f8faff;
+}
+#formArea #logInBtn:hover{
+  background-color: #FFBC42;
+}
+#formArea #signUpBtn{
+  background-color: #f8faff;
+  color: #1f2124;
+  border: 3px solid #FFBC42;
+}
+#formArea #signUpBtn:hover{
+  background-color: #FFBC42;
+  border: 5px solid #f8faff;
+  color: #f8faff;
+}
+
+.otherSignIn{
+  display: inline-block;
+  font-size: 1em;
+}
+#googleSignIn{
+  cursor: pointer;
+}
+.fa-google{
+  color: #3ac569;
+}
+a{
+  text-decoration: none;
+}
+a p{
+  color: #1e1e1e;
+  margin-top: 2em;
+}

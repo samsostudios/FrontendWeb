@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Budget Right Sign In</title>
+
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/cgq2ysl.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ntegrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <span id="userStatus"></span>
+        <div class="logoArea">
+          <div class="logo">
+            <img src="../images/LogoWhite.png" alt="logo">
+          </div>
+          <div class="welcomeTxt">
+            <h2>Welcome to</h2>
+            <h1>Budget Right!</h1>
+          </div>
+        </div>
+
+        <div id="formArea">
+          <form action="#">
+            <div id="emailForm" class="formField">
+              <label for="emailInput">Email:</label>
+              <input id="emailInput" type="text" name="email" placeholder="Email">
+            </div>
+            <div id="passForm" class="formField">
+              <label for="passInput">Password:</label>
+              <input id="passInput" type="password" name="password" placeholder="Password">
+            </div>
+
+            <button id="logInBtn" type="button" name="login">Login</button>
+            <button id="signUpBtn" type="button" name="login">Sign Up</button>
+
+            <div class="otherSignIn">
+              <a id="googleSignIn">
+                <p>or sign in with <i class="fab fa-google"></i></p>
+              </a>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

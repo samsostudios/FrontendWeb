@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Budget Right Sign In</title>
+
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/cgq2ysl.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ntegrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="addItemOverlay">
+          <div class="overlay">
+
+          </div>
+          <div class="overlayContent">
+            <div class="closeAddArea">
+              <a id=closeBtn href="#"><i class="far fa-times-circle"></i></a>
+            </div>
+
+            <div class="addItemForm">
+              <form action="">
+                <div class="formRow formField">
+                  <label for="itemAmount">Enter Amount:</label>
+                  <input id="addItemInput" type="number" name="itemAmount" placeholder="Enter Amount">
+                </div>
+                <div class="formRow formField">
+                  <select id="itemType">
+                    <option value="Food">Food</option>
+                    <option value="Rent">Rent</option>
+                    <option value="Travel">Travel</option>
+                  </select>
+                </div>
+
+                <button id="saveItemVal" type="button" name="saveBtn">Save</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="logo">
+            <img id="headerImg" src="../images/blueLogo.png" alt="Budget Right">
+          </div>
+
+          <div class="navItems">
+            <a class="active" href="#"><h1>Overview</h1></a>
+            <a href="#"><h1>Purchases</h1></a>
+          </div>
+        </div>
+
+        <div class="dataArea">
+          <div class="infoAddArea">
+            <div id="welcomeTxt">
+
+            </div>
+
+            <div class="addItem">
+              <a id="addItemBtn" href=""><h1><i class="fas fa-plus"></i> Add Expense</h1></a>
+            </div>
+          </div>
+
+          <div class="remainingArea">
+            <div id="monthlyRemainCard" class="budgetCard cardSetup">
+              <div class="iconArea">
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <div id="mValueArea" class="valueArea">
+
+              </div>
+            </div>
+
+            <div id="foodRemainCard" class="budgetCard cardSetup">
+              <div class="iconArea">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div id="fValueArea" class="valueArea">
+
+              </div>
+            </div>
+
+            <div id="rentRemainCard" class="budgetCard cardSetup">
+              <div class="iconArea">
+                <i class="fas fa-home"></i>
+              </div>
+              <div id="rValueArea" class="valueArea">
+
+              </div>
+            </div>
+
+            <div id="travelRemainCard" class="budgetCard cardSetup">
+              <div class="iconArea">
+                <i class="fas fa-car"></i>
+              </div>
+              <div id="tValueArea" class="valueArea">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="graphArea">
+            <canvas id="myChart"></canvas>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

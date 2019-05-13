@@ -1,0 +1,68 @@
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-position: center;
+  background-size: cover;
+}
+h1 {
+  color: #1e1e1e;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6em;
+  margin: 0;
+}
+h2 {
+  color: #1e1e1e;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 6em;
+  margin: 0;
+}
+#weatherType{
+  font-size: 4em;
+}
+
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+}
+.content{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dataArea{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-content: start;
+  grid-template-rows: auto auto auto;
+}
+
+#grid1{
+  text-align: center;
+}
+#grid2{
+  text-align: center;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  align-content: start
+}
+#grid3{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+#image{
+  width: 50%;
+
+}

@@ -1,0 +1,140 @@
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+}
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: "700";
+  font-weight: 700;
+  font-size: 2em;
+  color: #1e1e1e;
+}
+.title h1{
+  font-size: 4em;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: "700";
+  font-weight: 700;
+  font-size: 2em;
+  color: #fff;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: "700";
+  font-weight: 700;
+  font-size: 3em;
+  color: #1e1e1e;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: "300";
+  font-weight: 300;
+  font-size: 2em;
+  color: #1e1e1e;
+}
+.zeroOpac{
+  opacity: 0;
+}
+.content{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentation{
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.active{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+.animateShow{
+  opacity: 1.0;
+  animation-name: showSlide;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}@keyframes showSlide {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1.0;
+  }
+}
+
+
+#polygonShapes{
+  width: 100%;
+  height: auto;
+}
+.polyShape{
+  width: 50%;
+}
+
+#polygonShapes > path{
+  opacity: 0;
+}
+
+.sText{
+  width: 50vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10% 40% 40%;
+  grid-template-areas: "col" "col2";
+  grid-gap: 2em;
+  padding: 1% 5% 0% 5%;
+  align-items: center;
+  justify-content: center;
+}
+.sContent{
+  width: 50vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "textArea" "animArea";
+  grid-template-rows: auto 70%;
+  grid-gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.layout1{
+  grid-area: "padTop";
+}
+
+.pContent{
+  width: 70vw;
+  height: 100vh;
+}
+
+.nContent{
+  width: 50vw;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "textArea" "animArea";
+  grid-template-rows: 70% 30%;
+  grid-gap: 200px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#lines > path{
+  opacity: 0;
+}

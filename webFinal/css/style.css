@@ -1,0 +1,90 @@
+/* Colors
+blue: #0098d8
+dlue: #0b3536
+white: #e5e7de
+red: #f54123;
+*/
+
+html, body{
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper{
+  width: 100vw;
+  height: auto;
+}
+.banner{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+.reportArea{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: flex-end;
+}
+.reportArea button{
+  width: 15%;
+  height: auto;
+  margin: 1em 1em;
+  border: 0;
+  border-radius: 3em;
+
+}
+.hero{
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero h1{
+  color: #e5e7de;
+}
+.downArea{
+  width: 100vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downArea i{
+  color: #e5e7de;
+  font-size: 3em;
+}
+.firesArea{
+  width: 100vw;
+  height: auto;
+  background-color: #0b3536;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dataGrid{
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
+  margin: 1em 0;
+}
+.fireItem{
+  background-color: #f54123;
+  border-radius: 1em;
+}
+.fireItem i{
+  color: #e5e7de;
+  font-size: 6em;
+  margin: 0 40%;
+}

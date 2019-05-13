@@ -1,0 +1,104 @@
+html, body{
+  padding: 0;
+  margin: 0;
+}
+label{
+  font-size: 1.5em;
+}
+h1{
+  margin: 0;
+}
+.wrapper{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f8faff
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.welcomeTxt{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+.welcomeTxt h1{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2.5em;
+  color: #1f2124;
+}
+.inputArea{
+  width: 75%;
+  height: 85%;
+}
+.budgetForm{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0
+}
+.budgetForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  height: 90%;
+  border: double 5px transparent;
+  border-radius: 1em;
+  background-image: linear-gradient(#f8faff, #f8faff), radial-gradient(circle at top left, #45d9fd,#0080ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.budgetForm form label{
+  font-family: proxima-soft, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.budgetForm form input{
+  appearance:none;
+	border: none;
+  background-color: #f8faff;
+	border-bottom: 1.5px solid #0080ff;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 15px;
+  font-size: 1em;
+}
+.budgetForm form .formField{
+  display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin-bottom: 12.5px;
+}
+.formRow{
+  margin: 1em 0;
+  width: 50%;
+  height: 20%;
+}
+.budgetForm button{
+  width: 50%;
+  font-size: 1.5em;
+  font-family: proxima-soft, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 20px 20px;
+  margin: 1em;
+  border-radius: 2em;
+  border: 0px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #0080ff, #45d9fd);
+  color: #f8faff;
+}
